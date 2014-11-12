@@ -32,3 +32,4 @@ public
 
 #intellij settings
 .idea
+*.iml
