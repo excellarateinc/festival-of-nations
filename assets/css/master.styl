@@ -1,0 +1,67 @@
+@import '_settings'
+@import 'jeet'
+
+normalize-css()
+base()
+edit()
+
+containerWidth = 850px
+
+#nav
+  center(containerWidth)
+  ul
+    inline-list: 15px
+    li
+      span(1/4)
+      text-align center
+      padding-top 5px
+      padding-bottom 3px
+
+
+.slicknav_menu
+   +above(600px)
+      display none
+   +below(600px)
+      display block
+
+
+#container
+  center(containerWidth)
+
+  .main
+    transition: all .5s ease
+    +below(600px)
+      stack()
+
+
+  .legacy
+    padding: 5px
+    a
+      float left
+      margin-right 8px
+    cf()
+
+  .logos
+     a
+      col(1/3, cycle: 3)
+      margin-bottom 6px
+     img
+       center()
+
+#footer
+  center(containerWidth)
+  padding 20px 5px 10px 5px
+  background-color #000000
+  color #ffffff
+  .col
+    col(1/3)
+
+
+.first
+  background-color crimson
+.second
+  background-color seagreen
+.third
+  background-color orangered
+.forth
+  background-color cornflowerblue
