@@ -7,8 +7,13 @@ edit()
 
 containerWidth = 850px
 
+.slideshow
+  figure
+    margin 0
+
 #nav
-  center(containerWidth)
+  +below(600px)
+    display none
   ul
     inline-list: 15px
     li
@@ -17,13 +22,11 @@ containerWidth = 850px
       padding-top 5px
       padding-bottom 3px
 
-
 .slicknav_menu
    +above(600px)
       display none
    +below(600px)
       display block
-
 
 #container
   center(containerWidth)
@@ -49,12 +52,12 @@ containerWidth = 850px
        center()
 
 #footer
-  center(containerWidth)
   padding 20px 5px 10px 5px
   background-color #000000
   color #ffffff
   .col
     col(1/3)
+  cf()
 
 
 .first
