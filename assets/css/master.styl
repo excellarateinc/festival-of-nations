@@ -3,7 +3,7 @@
 
 normalize-css()
 base()
-edit()
+//edit()
 
 a, a:active
   outline none
@@ -16,6 +16,8 @@ a, a:active
 
 containerWidth = 850px
 headerHeight = 66px
+niceFontFamily='Righteous'
+defaultFontFamily = Helvetica
 
 .slideshow
   //height 1000px
@@ -48,8 +50,8 @@ headerHeight = 66px
     margin 0
     li
       //span(1/5)
-      font-family Helvetica
-      font-size 23px
+      font-family niceFontFamily, defaultFontFamily
+      font-size 21px
       float left
       display block
       a
@@ -68,6 +70,13 @@ headerHeight = 66px
 
 
 .main
+  h1
+    padding 10px
+    font-family : niceFontFamily, defaultFontFamily
+    font-size 48px
+  p
+    margin-top 10px
+    padding 10px
   transition: all .5s ease
   +below(600px)
     stack()
