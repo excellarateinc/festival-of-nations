@@ -33,3 +33,6 @@ public
 #intellij settings
 .idea
 *.iml
+
+# misc
+blah.css
