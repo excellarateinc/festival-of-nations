@@ -31,8 +31,14 @@ defaultFontFamily = Helvetica
 #header-wrapper
   height headerHeight
   width 100%
-  posistion fixed
-  background black
+  z-index 15
+  background: black
+  position fixed
+  background rgba(26, 26, 26, 0.9)
+  transition background 0.5s ease
+  -webkit-transition:background 0.5s ease
+  top 0
+  left 0
 
 .header
   margin 0 auto
@@ -57,7 +63,7 @@ defaultFontFamily = Helvetica
       a
         color white
         display block
-        padding 20px
+        padding 20px 5px 20px 6px
         &:hover
           color white
           background-color lightskyblue
