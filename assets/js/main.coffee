@@ -4,8 +4,8 @@ require.config
 
 
 require ['jquery', 'better-simple-slideshow', 'jquery.slicknav.min'], ($) ->
-  console.log 'jquery, better-simple-slideshow and slicknav loaded'
-  $('#nav').slicknav()
+  $('#nav').slicknav({prependTo: '#header-wrapper'})
+  $('.slicknav_menu').prepend('<a class="logo" href="index.html"><img src="img/logo.png" height="50px" alt="Festival Of Nations"/></a>')
   makeBSS('.slideshow', { auto: {speed: 4000}, hideControls: true } )
 
 

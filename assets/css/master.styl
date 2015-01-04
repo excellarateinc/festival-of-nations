@@ -19,6 +19,9 @@ headerHeight = 66px
 niceFontFamily='Righteous'
 defaultFontFamily = Helvetica
 
+.wrapper
+  margin-top headerHeight
+
 .slideshow
   //height 1000px
   width 100%
@@ -39,23 +42,27 @@ defaultFontFamily = Helvetica
   -webkit-transition:background 0.5s ease
   top 0
   left 0
-
-.header
-  margin 0 auto
-  height headerHeight
   .logo
     float left
     margin 10px 0 0 5px
     width 235px
 
-.nav
+.header
+  margin 0 auto
+  height headerHeight
+
+
+#main-logo
+  +below(800px)
+    display none
+
+#nav
   +below(800px)
     display none
   ul
     float right
     margin 0
     li
-      //span(1/5)
       font-family niceFontFamily, defaultFontFamily
       font-size 21px
       float left
