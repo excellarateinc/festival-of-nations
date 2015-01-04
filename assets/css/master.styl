@@ -15,9 +15,10 @@ a, a:active
   outline: 0
 
 containerWidth = 850px
-headerHeight = 66px
-niceFontFamily='Righteous'
+headerHeight = 64px
+niceFontFamily='Karla'
 defaultFontFamily = Helvetica
+showMobileNavWidth = 846px
 
 .wrapper
   margin-top headerHeight
@@ -37,6 +38,7 @@ defaultFontFamily = Helvetica
   z-index 15
   background: black
   position fixed
+  text-transform uppercase
   background rgba(26, 26, 26, 0.9)
   transition background 0.5s ease
   -webkit-transition:background 0.5s ease
@@ -53,11 +55,11 @@ defaultFontFamily = Helvetica
 
 
 #main-logo
-  +below(800px)
+  +below(showMobileNavWidth)
     display none
 
 #nav
-  +below(800px)
+  +below(showMobileNavWidth)
     display none
   ul
     float right
@@ -76,9 +78,9 @@ defaultFontFamily = Helvetica
           background-color lightskyblue
 
 .slicknav_menu
-   +above(800px)
+   +above(showMobileNavWidth)
       display none
-   +below(800px)
+   +below(showMobileNavWidth)
       display block
 
 
