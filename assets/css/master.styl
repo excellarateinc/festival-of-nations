@@ -5,6 +5,15 @@ normalize-css()
 base()
 //edit()
 
+containerWidth = 850px
+headerHeight = 68px
+niceFontFamily='Playfair Display'
+defaultFontFamily = Helvetica
+showMobileNavWidth = 846px
+slideshowBaseHeight = 200px
+rupture.scale = 0 700px 850px 1000px 1200px 1400px
+
+
 a, a:active
   outline none
   text-decoration none
@@ -14,23 +23,64 @@ a, a:active
   -webkit-transition: all .25s ease-in-out
   outline: 0
 
-containerWidth = 850px
-headerHeight = 64px
-niceFontFamily='Karla'
-defaultFontFamily = Helvetica
-showMobileNavWidth = 846px
 
 .wrapper
   margin-top headerHeight
 
 .slideshow
-  //height 1000px
+  height 1000px
   width 100%
   overflow hidden
   position relative
   background #595959
-  figure
-    margin 0
+  +at(1)
+    height slideshowBaseHeight + 100px
+  +at(2)
+    height slideshowBaseHeight + 200px
+  +at(3)
+    height slideshowBaseHeight + 300px
+  +at(4)
+    height slideshowBaseHeight + 400px
+  +at(5)
+    height slideshowBaseHeight + 500px
+
+
+.slide0
+  background url(/img/header_15.jpg) no-repeat center center
+  -webkit-background-size cover
+  background-size cover
+.slide1
+  background url(/img/header_8.jpg) no-repeat center center
+  -webkit-background-size cover
+  background-size cover
+.slide2
+  background url(/img/header_10.jpg) no-repeat center center
+  -webkit-background-size cover
+  background-size cover
+.slide3
+  background url(/img/header_11.jpg) no-repeat center center
+  -webkit-background-size cover
+  background-size cover
+.slide4
+  background url(/img/header_12.jpg) no-repeat center center
+  -webkit-background-size cover
+  background-size cover
+.slide5
+  background url(/img/header_13.jpg) no-repeat center center
+  -webkit-background-size cover
+  background-size cover
+.slide6
+  background url(/img/header_14.jpg) no-repeat center center
+  -webkit-background-size cover
+  background-size cover
+.slide7
+  background url(/img/header_16.jpg) no-repeat center center
+  -webkit-background-size cover
+  background-size cover
+.slide8
+  background url(/img/header_25.jpg) no-repeat center center
+  -webkit-background-size cover
+  background-size cover
 
 #header-wrapper
   height headerHeight

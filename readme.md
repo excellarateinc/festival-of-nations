@@ -14,6 +14,9 @@ Setup
 Technical Details
 ----
 
-- makes use of Jeet, [Roots](http://roots.cx), Jade, Rupture
-- [Better Simple Slideshow](https://github.com/leemark/better-simple-slideshow)
+- makes use of Jeet,
+- [Roots](http://roots.cx)
+- Jade
+- [Rupture](https://github.com/jenius/rupture)
+- [Backstretch](https://github.com/srobbin/jquery-backstretch)
 - [SlickNav](http://slicknav.com)
