@@ -46,7 +46,13 @@ a, a:active
   width 90%
   margin 0 auto
   overflow hidden
-
+  .colLeft
+    float left
+    //margin 150px 0 0 0
+    width 45%
+  .colRight
+    float right
+    width 600px
 
 .slideshow
   height 750px
@@ -102,7 +108,7 @@ a, a:active
         ul
           left auto
           padding-top 50x
-          min-width 100%
+          //min-width 100%
           li
             float none
             background rgba(26, 26, 26, 0.9)
@@ -146,14 +152,10 @@ a, a:active
   .section2
     background url("/img/grey.png")
     padding 110px 0 50px
-    .colLeft
-      float left
-      //margin 150px 0 0 0
-      width 45%
-    .colRight
-      float right
-      width 600px
-    cf()
+    h2
+      text-align center
+    ul
+      cf()
     li
       float left
       width 20%
@@ -195,6 +197,9 @@ a, a:active
   +below(600px)
     stack()
 
+.explore
+  img
+    width 450px
 
 .legacy
   padding: 7px

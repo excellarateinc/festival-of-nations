@@ -1,26 +1,26 @@
 extends layout
 block content
-    .main
+    .main.explore
         .section1
             h1 Explore
-        .section2
+        #cafe.section2
             .content
                 .colLeft
                     img(src="./img/cafes.jpg" alt="Cafe")
                 .colRight
                     h2 Cafes
                     p Enjoy the different tastes found around the world at 35 different ethnic food stands. From Norwegian lefse to Thai noodles, each taste is an experience in world dining. Ages 21 and up can enjoy winetasting, a glass of beer or other beverages from around the world.
-        .section3
+        #bazaar.section3
             .content
                 .colLeft
                     h2 Bazaar
                     p Come, stroll, and immerse yourself in our International Bazaar, featuring unique imported gifts from more than 40 cultures. Take home a beautiful souvenir from one country or more!
                 .colRight
-                    img(src="./img/cafes.jpg" alt="Bazaar")
-        .section2
+                    img(src="./img/bazaar.jpg" alt="Bazaar")
+        #performances.section2
             .content
                 .colLeft
-                    img(src="./img/cafes.jpg" alt="World Stage")
+                    img(src="./img/worldStage.jpg" alt="World Stage")
                 .colRight
                     h2 Performances
                     p More than 100 music and dance groups performing continuously on three stages throughout the Festival. Students are treated to exclusive performances by the Ethnic Dance Theatre as well as other folk dance groups presenting cultures from all over the world in the Roy Wilkins Auditorium on Thursday and Friday of the Festival
@@ -28,9 +28,16 @@ block content
                         li Atrium stage
                         li Cafe Stage
                         li World Stage
+
                     h3 Dance Schedule
-        .section3
-            h2 Demonstrations
+        #demo.section3
+            .content
+                .colLeft
+                    h2 Demonstrations
+                    p Authentic folk artisans practice the craft that has been passed down to them through many generations. Their interactive and educational demonstrations are a must-see! Plan the time to immerse yourself in old world arts that will have you coming away totally amazed.
+                .colRight
+                    img(src="./img/demo.jpg" alt="Demonstrations")
+        #special.section2
             h2 Special Events
             h3 Naturalization Cermony
             h3 Art Slam
