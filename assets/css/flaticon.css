@@ -14,19 +14,33 @@
 font-style: normal;
 margin-left: 20px;
 margin-right: 20px;
-
-}.flaticon-bird9:before {
+}.flaticon-airplane74:before {
 	content: "\e000";
 }
-.flaticon-cooking15:before {
+.flaticon-bird9:before {
 	content: "\e001";
 }
-.flaticon-dancer3:before {
+.flaticon-cinema37:before {
 	content: "\e002";
 }
-.flaticon-passport:before {
+.flaticon-cooking15:before {
 	content: "\e003";
 }
-.flaticon-shop1:before {
+.flaticon-dancer3:before {
 	content: "\e004";
+}
+.flaticon-eco28:before {
+	content: "\e005";
+}
+.flaticon-passport:before {
+	content: "\e006";
+}
+.flaticon-school50:before {
+	content: "\e007";
+}
+.flaticon-shop1:before {
+	content: "\e008";
+}
+.flaticon-squares8:before {
+	content: "\e009";
 }
