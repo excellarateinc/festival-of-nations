@@ -12,6 +12,19 @@ defaultFontFamily = Helvetica
 showMobileNavWidth = 846px
 slideshowBaseHeight = 200px
 rupture.scale = 0 700px 850px 1000px 1200px 1400px
+dirtyYellow = #ddb168
+
+h1
+  font-family niceFontFamily, defaultFontFamily
+  font-size 48px
+h2
+  font-family niceFontFamily, defaultFontFamily
+  font-size 42px
+
+h3
+  font-family niceFontFamily, defaultFontFamily
+
+
 
 ul
   list-style none
@@ -91,7 +104,8 @@ a, a:active
         &:hover
           color white
           background-color lightskyblue
-
+      .last
+        padding-right 13px
 .slicknav_menu
    +above(showMobileNavWidth)
       display none
@@ -102,8 +116,9 @@ a, a:active
 .main
   .section1
     background #e5edf5
-    padding 80px 0 90px
+    padding 40px 0 50px
     text-align center
+
   .section2
     background url("/img/grey.png")
     padding 110px 0 50px
@@ -130,16 +145,18 @@ a, a:active
       width 100px
       margin 0 auto 30px
       border-radius 50%
-
     a
       color #555
       font-size 4em
+      &:hover
+        background dirtyYellow
     h3
       margin 10px
-      font-family niceFontFamily, defaultFontFamily
-  h1
-    font-family niceFontFamily, defaultFontFamily
-    font-size 48px
+  .section3
+    padding 40px 20px 50px
+    h2
+      text-align center
+
   p
     margin-top 10px
     padding 10px
@@ -149,10 +166,10 @@ a, a:active
 
 
 .legacy
-  padding: 5px
+  padding: 7px
   a
     float left
-    margin-right 8px
+    margin-right 10px
   cf()
 
 .logos
@@ -161,12 +178,26 @@ a, a:active
     margin-bottom 6px
    img
      center()
+   cf()
 
 #footer
   padding 20px 5px 10px 5px
-  background-color #000000
+  background-color #31343c
   color #ffffff
   .col
     col(1/3)
+    a
+      text-align center
+      color #31343c
+      letter-spacing 1px
+      border-radius 25px
+      width 170px
+      background #E5EDF5
+      display block
+      font-size 13px
+      height 30px
+      padding 7px 0 0 0
+      &:hover
+        background dirtyYellow
   cf()
 

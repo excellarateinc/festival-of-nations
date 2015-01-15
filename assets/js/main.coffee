@@ -5,18 +5,13 @@ require.config
 
 require ['jquery', 'jquery.backstretch.min', 'jquery.slicknav.min'], ($) ->
   $('#nav').slicknav({prependTo: '#header-wrapper'})
-  $('.slicknav_menu').prepend('<a class="logo" href="index.html"><img src="img/logo.png" height="50px" alt="Festival Of Nations"/></a>')
+  $('.slicknav_menu').prepend('<a class="logo" href="index.html"><img src="img/fon2015logoWhite.png" height="57px" alt="Festival Of Nations"/></a>')
   $('.slideshow').backstretch([
-    '/img/header_8.jpg',
-    '/img/header_10.jpg',
-    '/img/header_11.jpg',
-    '/img/header_12.jpg',
-    '/img/header_13.jpg',
-    '/img/header_14.jpg',
-    '/img/header_15.jpg',
-    '/img/header_16.jpg',
-    '/img/header_17.jpg',
-    '/img/header_18.jpg',
-    '/img/header_20.jpg'
+    '/img/header_1.jpg',
+    '/img/header_3.jpg',
+    '/img/header_2.jpg',
+    '/img/header_5.jpg',
+    '/img/header_4.jpg',
+    '/img/header_6.jpg'
   ], {duration: 3000, fade: 750})
 
