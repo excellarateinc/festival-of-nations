@@ -42,6 +42,12 @@ a, a:active
 .wrapper
   margin-top headerHeight
 
+.content
+  width 90%
+  margin 0 auto
+  overflow hidden
+
+
 .slideshow
   height 1000px
   width 100%
@@ -97,6 +103,14 @@ a, a:active
       font-size 21px
       float left
       display block
+      &:hover
+        ul
+          left auto
+          padding-top 50x
+          min-width 100%
+          li
+            float none
+            background rgba(26, 26, 26, 0.9)
       a
         color white
         display block
@@ -104,8 +118,18 @@ a, a:active
         &:hover
           color white
           background-color lightskyblue
+
       .last
         padding-right 13px
+
+      /* submenu positioning*/
+      ul
+        position absolute
+        white-space nowrap
+        z-index 1
+        left -99999em
+
+
 .slicknav_menu
    +above(showMobileNavWidth)
       display none
@@ -118,13 +142,18 @@ a, a:active
     background #e5edf5
     padding 30px 0 40px
     text-align center
-
+  .decorative-plate
+    background #e5edf5 url('/img/plateBG_ddb168.png') no-repeat center center
+    -webkit-background-size contain
+    -moz-background-size contain
+    -o-background-size contain
+    background-size contain
   .section2
     background url("/img/grey.png")
     padding 110px 0 50px
     .colLeft
       float left
-      margin 150px 0 0 0
+      //margin 150px 0 0 0
       width 45%
     .colRight
       float right
