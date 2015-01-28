@@ -38,6 +38,23 @@ a, a:active
   -webkit-transition: all .25s ease-in-out
   outline: 0
 
+dl
+  padding 0.5em
+
+dt
+  float left
+  clear left
+  width 175px
+  text-align right
+  font-weight: bold
+
+dt:after
+    content ":"
+
+dd
+  margin 0 0 0 185px
+  padding 0 0 0.5em 0
+
 
 .wrapper
   margin-top headerHeight
@@ -172,23 +189,26 @@ a, a:active
         width 100%
         height auto
         margin 0 0 60px 0
+      a
+        color #555
+        font-size 4em
+        &:hover
+          background dirtyYellow
     .icon
       background #E5EDF5
       height 100px
       width 100px
       margin 0 auto 30px
       border-radius 50%
-    a
-      color #555
-      font-size 4em
-      &:hover
-        background dirtyYellow
-    h3
+    h3, h4
       margin 10px
+
   .section3
     padding 40px 20px 50px
     h2
       text-align center
+    ul
+      list-style-type circle
 
   p
     margin-top 10px
