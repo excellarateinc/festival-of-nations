@@ -6,13 +6,16 @@ base()
 //edit()
 
 containerWidth = 850px
-headerHeight = 68px
-niceFontFamily='Playfair Display'
+headerHeight = 65px
+niceFontFamily='Montserrat'
 defaultFontFamily = Helvetica
 showMobileNavWidth = 846px
-slideshowBaseHeight = 200px
+slideshowBaseHeight = 150px
 rupture.scale = 0 700px 850px 1000px 1200px 1400px
-dirtyYellow = #ddb168
+dirtyYellow = #27e637
+primaryBgColor = #FFAC00
+darkTextcolor =#263137
+secondaryBgColor = #53BBF4
 
 h1
   font-family niceFontFamily, defaultFontFamily
@@ -23,7 +26,7 @@ h2
 
 h3
   font-family niceFontFamily, defaultFontFamily
-
+  font-size 36px
 
 
 ul
@@ -72,26 +75,26 @@ dd
     width 600px
 
 .slideshow
-  height 750px
+  height 450px
   width 100%
   overflow hidden
   position relative
   background #595959
   +at(1)
-    height slideshowBaseHeight + 100px
+    height slideshowBaseHeight + 50px
   +at(2)
-    height slideshowBaseHeight + 200px
+    height slideshowBaseHeight + 100px
   +at(3)
-    height slideshowBaseHeight + 300px
+    height slideshowBaseHeight + 200px
 
 #header-wrapper
   height headerHeight
   width 100%
   z-index 15
-  background: black
+  background: primaryBgColor
   position fixed
   text-transform uppercase
-  background rgba(26, 26, 26, 0.9)
+  background rgba(255, 172, 0, 0.9)
   transition background 0.5s ease
   -webkit-transition:background 0.5s ease
   top 0
@@ -118,7 +121,7 @@ dd
     margin 0
     li
       font-family niceFontFamily, defaultFontFamily
-      font-size 21px
+      font-size 18px
       float left
       display block
       &:hover
@@ -128,14 +131,14 @@ dd
           //min-width 100%
           li
             float none
-            background rgba(26, 26, 26, 0.9)
+            background rgba(255, 172, 0, 0.9)
       a
-        color white
+        color darkTextcolor
         display block
-        padding 20px 5px 20px 6px
+        padding 20px 5px 23px 6px
         &:hover
-          color white
-          background-color lightskyblue
+          color darkTextcolor
+          background-color white
 
       .last
         padding-right 13px
@@ -157,17 +160,17 @@ dd
 
 .main
   .section1
-    background #e5edf5
-    padding 30px 0 40px
+    background primaryBgColor
+    padding 10px 0 20px
     text-align center
   .decorative-plate
-    background #e5edf5 url('/img/plateBG_ddb168.png') no-repeat center center
+    background url('/img/PlateWhite.png') no-repeat center center primaryBgColor
     -webkit-background-size contain
     -moz-background-size contain
     -o-background-size contain
     background-size contain
   .section2
-    background url("/img/grey.png")
+    background secondaryBgColor
     padding 110px 0 50px
     h2
       text-align center
@@ -190,12 +193,12 @@ dd
         height auto
         margin 0 0 60px 0
       a
-        color #555
+        color darkTextcolor
         font-size 4em
         &:hover
-          background dirtyYellow
+          background primaryBgColor
     .icon
-      background #E5EDF5
+      background white
       height 100px
       width 100px
       margin 0 auto 30px
@@ -248,7 +251,7 @@ dd
       letter-spacing 1px
       border-radius 25px
       width 170px
-      background #E5EDF5
+      background primaryBgColor
       display block
       font-size 13px
       height 30px
