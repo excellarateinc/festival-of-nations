@@ -53,7 +53,7 @@
   background-color: #f5f5f5;
 }
 .slicknav_menu {
-    background: rgba(26, 26, 26, 0.9);
+    background: rgba(255, 172, 0, 0.9);
     padding:5px;
 }
 .slicknav_nav {
@@ -61,7 +61,7 @@
     margin:0;
     padding:0;
     font-size:0.875em;
-    background: rgba(26, 26, 26, 0.9);
+    background: rgba(255, 172, 0, 0.9);
 }
 .slicknav_nav, .slicknav_nav ul {
     list-style: none;
@@ -79,7 +79,7 @@
     padding:5px 10px;
     margin:2px 5px;
     text-decoration:none;
-    color:#fff;
+    color:#263137;
 }
 .slicknav_nav .slicknav_item a,
 .slicknav_nav .slicknav_parent-link a {
@@ -90,15 +90,15 @@
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    background:#87cefa;
-    color:#fff;
+    background:white;
+    color:#263137;
 }
 .slicknav_nav a:hover{
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    background:#87cefa;
-    color:#fff;
+    background:white;
+    color:#263137;
 }
 .slicknav_nav .slicknav_txtnode {
      margin-left:15px;   
