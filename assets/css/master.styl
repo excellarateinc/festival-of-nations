@@ -5,29 +5,27 @@ normalize-css()
 base()
 //edit()
 
-containerWidth = 850px
-headerHeight = 65px
-niceFontFamily='Montserrat'
-defaultFontFamily = Helvetica
-showMobileNavWidth = 846px
-slideshowBaseHeight = 150px
-rupture.scale = 0 700px 850px 1000px 1200px 1400px
-dirtyYellow = #27e637
-primaryBgColor = #FFAC00
-darkTextcolor =#263137
-secondaryBgColor = #53BBF4
 
 h1
-  font-family niceFontFamily, defaultFontFamily
+  font-family niceFontFamily, font-stack
   font-size 48px
 h2
-  font-family niceFontFamily, defaultFontFamily
+  font-family niceFontFamily, font-stack
   font-size 42px
 
 h3
-  font-family niceFontFamily, defaultFontFamily
+  font-family niceFontFamily, font-stack
   font-size 36px
 
+p
+  a, a:link, a:visited
+    color #db2814
+    webkit-transition opacity .25s ease
+    transition opacity .25s ease
+    text-decoration underline
+  a:hover
+    opacity 0.75
+    text-decoration none
 
 ul
   list-style none
@@ -58,8 +56,25 @@ dd
   margin 0 0 0 185px
   padding 0 0 0.5em 0
 
+body
+  background-color #000000
+
+.right
+  float right
+.left
+  float left
 
 .wrapper
+  +above(1000px)
+    width 80%
+    margin-right 10%
+    margin-left 10%
+  +below(1000px)
+    width 100%
+    margin-left 0
+    margin-right 0
+
+.wrapper-content
   margin-top headerHeight
 
 .content
@@ -92,7 +107,10 @@ dd
 
 #header-wrapper
   height headerHeight
-  width 100%
+  +above(1000px)
+    width 80%
+  +below(1000px)
+    width 100%
   z-index 15
   background: primaryBgColor
   position fixed
@@ -101,7 +119,6 @@ dd
   transition background 0.5s ease
   -webkit-transition:background 0.5s ease
   top 0
-  left 0
   .logo
     float left
     margin 5px 0 0 5px
@@ -123,7 +140,7 @@ dd
     float right
     margin 0
     li
-      font-family niceFontFamily, defaultFontFamily
+      font-family niceFontFamily, font-stack
       font-size 18px
       float left
       display block
@@ -160,46 +177,30 @@ dd
    +below(showMobileNavWidth)
       display block
 
+.primary-logo
+  text-align center
+  img
+    max-width 100%
+    height auto
+    width auto\9 /* ie8 */
 
 .main
   .section1
     background primaryBgColor
     padding 10px 0 20px
     text-align center
+
   .decorative-plate
-    background url('/img/PlateWhite.png') no-repeat center center primaryBgColor
+    background url('/img/PlateWhite.png') no-repeat center center
     -webkit-background-size contain
     -moz-background-size contain
     -o-background-size contain
     background-size contain
   .section2
     background secondaryBgColor
-    padding 110px 0 50px
+    padding 20px 20px 50px
     h2
       text-align center
-    ul
-      cf()
-    li
-      float left
-      width 20%
-      text-align center
-      height 250px
-      margin 0 2.4%
-      font-size 15px
-      +at(4)
-        width 28.2%
-        height 275px
-      +at(2)
-        width 44%
-      +at(1)
-        width 100%
-        height auto
-        margin 0 0 60px 0
-      a
-        color darkTextcolor
-        font-size 4em
-        &:hover
-          background primaryBgColor
     h3, h4
       margin 10px
     .icon
@@ -208,7 +209,11 @@ dd
       width 100px
       margin 0 auto 30px
       border-radius 50%
+    ul
+      list-style-type circle
+
   .section3
+    background white
     padding 40px 20px 50px
     h2
       text-align center
@@ -236,29 +241,55 @@ dd
 .logos
    a
     col(1/3, cycle: 3)
-    margin-bottom 6px
+    margin-bottom 12px
+    text-align center
    img
      center()
    cf()
 
-#footer
-  padding 20px 5px 10px 5px
-  background-color #31343c
-  color #ffffff
-  .col
-    col(1/3)
+#highlights
+  h3
+    margin-bottom 25px
+  ul
+    list-style-type none
+    cf()
+  li
+    float left
+    width 20%
+    text-align center
+    height 300px
+    margin 0 2.4%
+    font-size 15px
+    +at(4)
+      width 28.2%
+      height 275px
+    +at(2)
+      width 44%
+    +at(1)
+      width 100%
+      height auto
+      margin 0 0 60px 0
+    p
+      font-size 20px
     a
-      text-align center
-      color #31343c
-      letter-spacing 1px
-      border-radius 25px
-      width 170px
-      background primaryBgColor
-      display block
-      font-size 13px
-      height 30px
-      padding 7px 0 0 0
+      font-family: "Helvetica Neue"
+      color darkTextcolor
+      font-size 4em
       &:hover
-        background dirtyYellow
+        background primaryBgColor
+
+#footer
+  p
+    float left
+    padding-top 40px
+  .logo
+    float right
+  padding 5px 5px 15px 5px
+  background #31343c
+  color #ffffff
+  a
+    color white
+    &:hover
+      color primaryBgColor
   cf()
 

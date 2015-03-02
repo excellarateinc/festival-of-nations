@@ -10,12 +10,14 @@ html
     link(rel='stylesheet', href='css/simple-slideshow-styles.css')
     link(rel='stylesheet', href='css/slicknav.css')
     link(rel='stylesheet', href='css/flaticon.css')
-    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Montserrat')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Montserrat|Rokkitt')
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+    script(data-main="js/main", src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js")
   body
-    include ./navigation.jade
     .wrapper
-      .slideshow
-      block content
-    include ./footer.jade
+        include ./navigation.jade
+        .wrapper-content
+          .slideshow
+          block content
+        include ./footer.jade
 
-  script(data-main="js/main", src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js")
