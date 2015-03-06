@@ -215,6 +215,14 @@ body
       list-style-type circle
       li
         line-height 2em
+        a, a:link, a:visited
+          color #db2814
+          webkit-transition opacity .25s ease
+          transition opacity .25s ease
+          text-decoration underline
+        a:hover
+          opacity 0.75
+          text-decoration none
 
   .section3
     background white
@@ -225,7 +233,14 @@ body
       list-style-type circle
       li
         line-height 2em
-
+        a, a:link, a:visited
+          color #db2814
+          webkit-transition opacity .25s ease
+          transition opacity .25s ease
+          text-decoration underline
+        a:hover
+          opacity 0.75
+          text-decoration none
   p
     margin-top 10px
     padding 10px
@@ -284,7 +299,9 @@ body
       font-family: "Helvetica Neue"
       color darkTextcolor
       font-size 4em
+      text-decoration none
       &:hover
+        opacity 1
         background primaryBgColor
 
 #footer
