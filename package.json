@@ -9,7 +9,6 @@
     "jeet": "^6.1.2",
     "marked": "0.3.x",
     "rupture": "0.4.x",
-    "stylus": "0.48.x",
-    "jeet": "6.1.2"
+    "stylus": "0.48.x"
   }
 }

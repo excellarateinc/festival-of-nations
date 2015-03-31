@@ -2,7 +2,7 @@
 @import 'jeet'
 
 normalize-css()
-base()
+bas
 //edit()
 
 
@@ -82,6 +82,10 @@ body
   width 90%
   margin 0 auto
   overflow hidden
+  td
+    text-align left
+    width 165px
+    vertical-align top
   .colLeft
     float left
   .colRight
@@ -92,6 +96,10 @@ body
   .short
     width 45%
     margin 0
+
+.content-data
+  padding-left 45px
+
 
 .slideshow
   height 500px
@@ -250,7 +258,8 @@ body
 
 .explore
   img
-    width 450px
+    width 100%
+    height auto
 
 .legacy
   padding: 7px
@@ -258,6 +267,15 @@ body
     float left
     margin-right 10px
   cf()
+
+.column {
+  -webkit-columns 2 200px
+  -moz-columns 2 200px
+  columns 2 200px
+  -webkit-column-gap: 4em
+  -moz-column-gap: 4em
+  column-gap: 4em
+}
 
 .logos
    a
