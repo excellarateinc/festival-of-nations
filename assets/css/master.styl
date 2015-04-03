@@ -2,7 +2,7 @@
 @import 'jeet'
 
 normalize-css()
-bas
+base()
 //edit()
 
 
@@ -141,9 +141,45 @@ body
 #main-logo
   +below(showMobileNavWidth)
     display none
+  @media screen and (max-width:showMobileNavWidth)
+    display none
+  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
+    display none
+  @media screen and (device-width: 320px) and (device-height: 534px) and (-webkit-device-pixel-ratio: 1.5)
+    display none
+  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2)
+    display none
+  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
+    display none
+  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)
+    display none
+  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)
+    display none
+  @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)
+    display none
+  @media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)
+    display none
 
 #nav
   +below(showMobileNavWidth)
+    display none
+  @media screen and (max-width:showMobileNavWidth)
+    display none
+  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
+    display none
+  @media screen and (device-width: 320px) and (device-height: 534px) and (-webkit-device-pixel-ratio: 1.5)
+    display none
+  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2)
+    display none
+  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
+    display none
+  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)
+    display none
+  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)
+    display none
+  @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)
+    display none
+  @media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)
     display none
   ul
     float right
@@ -181,10 +217,26 @@ body
 
 
 .slicknav_menu
-   +above(showMobileNavWidth)
-      display none
-   +below(showMobileNavWidth)
-      display block
+  display none
+  @media screen and (max-width:showMobileNavWidth)
+    display block
+  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
+    display block
+  @media screen and (device-width: 320px) and (device-height: 534px) and (-webkit-device-pixel-ratio: 1.5)
+    display block
+  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2)
+    display block
+  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
+    display block
+  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)
+    display block
+  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)
+    display block
+  @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)
+    display block
+  @media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)
+    display block
+
 
 .primary-logo
   text-align center
@@ -257,9 +309,10 @@ body
     stack()
 
 .explore
-  img
-    width 100%
-    height auto
+  .content
+    img
+      width 100%
+      height auto
 
 .legacy
   padding: 7px
@@ -321,6 +374,14 @@ body
       &:hover
         opacity 1
         background primaryBgColor
+
+#special
+  img
+    float right
+    marigin-top 8px
+    padding 10px 20px 0 0
+    width 150px
+
 #footer
   p
     float left
