@@ -29,7 +29,6 @@
 */
 
 .slicknav_menu {
-    font-size:16px;
     height: 58px;
 }
 /* Button */
@@ -60,7 +59,6 @@
     color:#fff;
     margin:0;
     padding:0;
-    font-size:0.875em;
     background: rgba(255, 172, 0, 0.9);
 }
 .slicknav_nav, .slicknav_nav ul {
