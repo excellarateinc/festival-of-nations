@@ -17,6 +17,10 @@ h3
   font-family niceFontFamily, font-stack
   font-size 36px
 
+h4
+  font-family niceFontFamily, font-stack
+  font-size 28px
+
 p
   line-height 1.5em
   a, a:link, a:visited
@@ -42,20 +46,16 @@ a, a:active
 
 dl
   padding 0.5em
-
 dt
-  float left
-  clear left
-  width 175px
-  text-align right
-  font-weight: bold
-
-dt:after
-    content ":"
-
-dd
-  margin 0 0 0 185px
-  padding 0 0 0.5em 0
+  font-weight bold
+  a, a:link, a:visited
+    color #db2814
+    webkit-transition opacity .25s ease
+    transition opacity .25s ease
+    text-decoration underline
+  a:hover
+    opacity 0.75
+    text-decoration none
 
 body
   background-color #000000
@@ -141,45 +141,9 @@ body
 #main-logo
   +below(showMobileNavWidth)
     display none
-  @media screen and (max-width:showMobileNavWidth)
-    display none
-  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
-    display none
-  @media screen and (device-width: 320px) and (device-height: 534px) and (-webkit-device-pixel-ratio: 1.5)
-    display none
-  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2)
-    display none
-  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
-    display none
-  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)
-    display none
-  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)
-    display none
-  @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)
-    display none
-  @media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)
-    display none
 
 #nav
   +below(showMobileNavWidth)
-    display none
-  @media screen and (max-width:showMobileNavWidth)
-    display none
-  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
-    display none
-  @media screen and (device-width: 320px) and (device-height: 534px) and (-webkit-device-pixel-ratio: 1.5)
-    display none
-  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2)
-    display none
-  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
-    display none
-  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)
-    display none
-  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)
-    display none
-  @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)
-    display none
-  @media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)
     display none
   ul
     float right
@@ -217,63 +181,10 @@ body
 
 
 .slicknav_menu
-  display none
-  @media screen and (max-width:showMobileNavWidth)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 320px) and (device-height: 534px) and (-webkit-device-pixel-ratio: 1.5)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)
-    display block
-    font-size 1.2em
-
-.slicknav_nav
-  @media screen and (max-width:showMobileNavWidth)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 320px) and (device-height: 534px) and (-webkit-device-pixel-ratio: 1.5)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)
-    display block
-    font-size 1.2em
-  @media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)
-    display block
-    font-size 1.2em
+   +above(showMobileNavWidth)
+      display none
+   +below(showMobileNavWidth)
+      display block
 
 .primary-logo
   text-align center
@@ -308,9 +219,6 @@ body
       width 100px
       margin 0 auto 30px
       border-radius 35%
-      +retina()
-        height 150px
-        width 150px
     ul
       list-style-type circle
       li
@@ -346,8 +254,6 @@ body
     padding 10px
   transition: all .5s ease
   +below(600px)
-    stack()
-  +retina()
     stack()
 
 .explore
@@ -405,11 +311,6 @@ body
       width 100%
       height auto
       margin 0 0 60px 0
-    +retina()
-      width 44%
-      height auto
-      font-size 1.5em
-      margin 0 0 60px 0
     p
       font-size 20px
     a
@@ -427,6 +328,20 @@ body
     marigin-top 8px
     padding 10px 20px 0 0
     width 150px
+
+#hours
+  dt
+    float left
+    clear left
+    width 175px
+    text-align right
+
+  dt:after
+    content ":"
+
+  dd
+    margin 0 0 0 185px
+    padding 0 0 0.5em 0
 
 #footer
   p
