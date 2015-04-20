@@ -74,6 +74,10 @@ body
     width 100%
     margin-left 0
     margin-right 0
+  @media iphone3, iphone4, iphone5, iphone6, iphone6plus
+    width 100%
+    margin-left 0
+    margin-right 0
 
 .wrapper-content
   margin-top headerHeight
@@ -107,6 +111,8 @@ body
   overflow hidden
   position relative
   background #595959
+  @media iphone3, iphone4, iphone5, iphone6, iphone6plus
+    height slideshowBaseHeight + 50px
   +at(1)
     height slideshowBaseHeight + 50px
   +at(2)
@@ -119,6 +125,8 @@ body
   +above(1000px)
     width 80%
   +below(1000px)
+    width 100%
+  @media iphone3, iphone4, iphone5, iphone6, iphone6plus
     width 100%
   z-index 15
   background: primaryBgColor
@@ -141,9 +149,13 @@ body
 #main-logo
   +below(showMobileNavWidth)
     display none
+  @media iphone3, iphone4, iphone5, iphone6, iphone6plus
+    display none
 
 #nav
   +below(showMobileNavWidth)
+    display none
+  @media iphone3, iphone4, iphone5, iphone6, iphone6plus
     display none
   ul
     float right
@@ -157,7 +169,6 @@ body
         ul
           left auto
           padding-top 50x
-          //min-width 100%
           li
             float none
             background rgba(255, 172, 0, 0.9)
@@ -181,10 +192,14 @@ body
 
 
 .slicknav_menu
-   +above(showMobileNavWidth)
-      display none
-   +below(showMobileNavWidth)
-      display block
+  +above(showMobileNavWidth)
+    display none
+  +below(showMobileNavWidth)
+    display block
+    font-size: 1.5em
+  @media iphone3, iphone4, iphone5, iphone6, iphone6plus
+    display block
+    font-size 1.5em
 
 .primary-logo
   text-align center
