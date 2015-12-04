@@ -1,0 +1,25 @@
+extends ../layout
+block content
+    .main.cushycms
+        .section1
+            h1 Cultural Exhibits Registration Form
+            .section3
+                div#wufoo-s1qhzczy1y65hxl Fill out my Festival of Nations #[a(href="https://festivalofnations.wufoo.com/forms/s1qhzczy1y65hxl") Cultural Exchibits Registration form]
+                script(type="text/javascript").
+                    var s1qhzczy1y65hxl;
+                    (function(d, t) {
+                        var s = d.createElement(t), options = {
+                            'userName':'festivalofnations',
+                            'formHash':'s1qhzczy1y65hxl',
+                            'autoResize':true,
+                            'height':'2453',
+                            'async':true,
+                            'host':'wufoo.com',
+                            'header':'show',
+                            'ssl':true};
+                        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+                        s.onload = s.onreadystatechange = function() {
+                            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                            try { s1qhzczy1y65hxl = new WufooForm();s1qhzczy1y65hxl.initialize(options);s1qhzczy1y65hxl.display(); } catch (e) {}};
+                                var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                    })(document, 'script');
