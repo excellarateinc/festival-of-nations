@@ -1,0 +1,34 @@
+extends ../layout
+block content
+    .main.cushycms
+        .section1
+            h1 Café Unloading & Loading Online Form
+            .section3
+                div#wufoo-maf7lsd0wdpqou Fill out my Festival of Nations #[a(href="https://festivalofnations.wufoo.com/forms/maf7lsd0wdpqou") Cafe Loading & Unloading form]
+                script(type="text/javascript").
+                    var maf7lsd0wdpqou;
+                    (function (d, t) {
+                        var s = d.createElement(t), options = {
+                            'userName': 'festivalofnations',
+                            'formHash': 'maf7lsd0wdpqou',
+                            'autoResize': true,
+                            'height': '2453',
+                            'async': true,
+                            'host': 'wufoo.com',
+                            'header': 'show',
+                            'ssl': true
+                        };
+                        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+                        s.onload = s.onreadystatechange = function () {
+                            var rs = this.readyState;
+                            if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                            try {
+                                maf7lsd0wdpqou = new WufooForm();
+                                maf7lsd0wdpqou.initialize(options);
+                                maf7lsd0wdpqou.display();
+                            } catch (e) {
+                            }
+                        };
+                        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode;
+                        par.insertBefore(s, scr);
+                    })(document, 'script');
