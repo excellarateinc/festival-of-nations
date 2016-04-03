@@ -2,6 +2,16 @@ extends layout
 
 block content
     .main.cushycms
+      #fb-root
+        script.
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1017144771637719";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
       #highlights.section2
         h2.primary-logo.decorative-plate
           img(src="./img/fon2015logo263137.png" alt="Festival Of Nations")
@@ -10,6 +20,10 @@ block content
         div(style='text-align:center; margin-top:15px; margin-bottom:15px; font-size:2em')
             a(href='info.html#tickets')
                 img(src="./img/buy-tickets-now.png" alt="buy tickets now")
+        div.social.fb-page(data-href='https://www.facebook.com/festivalofnationssaintpaulmn', data-tabs='timeline', data-small-header='true', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='false')
+            .fb-xfbml-parse-ignore
+                blockquote(cite='https://www.facebook.com/festivalofnationssaintpaulmn')
+                    a(href='https://www.facebook.com/festivalofnationssaintpaulmn') Festival of Nations-Saint Paul, MN
         ul
           li
             a.icon.icon-fon15_sun(href='info.html#tickets')
